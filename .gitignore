@@ -1,0 +1,18 @@
+# Node.js dependencies
+node_modules/
+
+# IDE/editor settings
+.vscode/
+
+# Optional: Lock files
+package-lock.json
+
+# Optional: Environment files
+.env
+
+# Optional: Build directories
+dist/
+build/
+
+# Log files
+*.log
