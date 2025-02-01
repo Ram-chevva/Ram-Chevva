@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #d35400;
+    background: linear-gradient(135deg, #d35400, #e67e22);
     color: white;
     padding: 20px 0;
     position: fixed;
@@ -25,6 +25,7 @@ header {
     left: 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: background 0.3s;
 }
 
 header .container {
@@ -49,9 +50,12 @@ nav ul li a {
     color: white;
     font-weight: bold;
     transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
     color: #ffcc00;
 }
 
@@ -59,6 +63,11 @@ nav ul li a:hover {
 .section {
     padding: 100px 20px;
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    transform: scale(1.02);
 }
 
 h2 {
@@ -73,12 +82,20 @@ p {
 
 /* Project Section */
 .project {
-    background: white;
+    background: linear-gradient(135deg, #fff, #f0f0f0);
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project h3 {
@@ -86,15 +103,33 @@ p {
 }
 
 .project ul {
-    list-style: square;
-    padding-left: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.project ul li {
+    background: rgba(211, 84, 0, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.project ul li::before {
+    content: '\2713';
+    color: #e67e22;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 /* Contact Section */
 #contact {
-    background-color: #d35400;
+    background: linear-gradient(135deg, #d35400, #e67e22);
     color: white;
     padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #contact strong {
@@ -123,5 +158,8 @@ footer {
     }
     .section {
         padding: 80px 20px;
+    }
+    .project ul li {
+        flex-direction: column;
     }
 }
