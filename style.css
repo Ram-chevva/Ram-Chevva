@@ -64,6 +64,7 @@ nav ul li a:hover {
     padding: 100px 20px;
     text-align: center;
     transition: transform 0.3s;
+    margin-top: 80px; /* Added margin to account for the fixed header */
 }
 
 .section:hover {
@@ -78,6 +79,11 @@ h2 {
 p {
     font-size: 1.1em;
     line-height: 1.6;
+}
+
+/* About Section */
+#about {
+    padding-top: 120px; /* Adjusted to add space under the fixed header */
 }
 
 /* Project Section */
@@ -158,6 +164,7 @@ footer {
     }
     .section {
         padding: 80px 20px;
+        margin-top: 60px; /* Adjusted for smaller screen */
     }
     .project ul li {
         flex-direction: column;
