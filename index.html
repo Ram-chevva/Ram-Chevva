@@ -5,147 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ram Linga Reddy Chevva - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Ram Linga Reddy Chevva</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <nav class="nav container">
+            <ul class="nav__list">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#education" class="nav__link">Education</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p> I am a proficient Java Full Stack Developer with experience in designing and building responsive web applications and 
-                scalable backend systems. With expertise in Java, Spring Boot, React.js, and Angular, I specialize in developing robust APIs and 
-                cloud-based solutions using AWS and Azure. My background includes working in Agile environments, implementing CI/CD pipelines, 
-                and ensuring application security and performance. Holding a Master’s degree in Computer Science from the University of South Carolina, 
-                I bring a strong foundation in database management, cloud computing, and modern development practices. Passionate about continuous learning, 
-                I thrive on solving complex problems and delivering high-quality software solutions.
-            </p>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <h3>The Contoso Pizza Web Application</h3>
-                <p><strong>The Contoso Pizza Web Application</strong></p>
-                    <p>is an interactive and user-friendly platform that allows customers to
-                     browse the menu, add pizzas to their cart, view the total price including taxes, and proceed to checkout for payment.
-                     The application is designed to enhance the online ordering experience by providing a seamless interface and smooth 
-                     transaction flow.
+    <main class="main">
+        <section id="about" class="hero section">
+            <div class="hero__content container">
+                <div class="hero__left">
+                    <h1 class="hero__title">Ram Linga Reddy Chevva</h1>
+                    <p class="hero__subtitle">Full-Stack Developer</p>
+                    <p class="hero__description">
+                        I'm a passionate Java Full Stack Developer specializing in building scalable web applications 
+                        and robust backend systems. With expertise in Spring Boot, React.js, and cloud technologies, 
+                        I create efficient solutions that solve real-world problems.
                     </p>
-                 <p><strong>2. Objectives</strong></p>
-                 <ul>
-                    <li>Develop a fully functional web-based pizza ordering system.</li>
-                    <li>Enable users to browse the menu and customize their orders.</li>
-                    <li>Implement a dynamic cart system for tracking selected items.</li>
-                    <li>Calculate the total price, including applicable taxes.</li>
-                    <li>Provide a secure and efficient checkout process.</li>
-                    <li>Ensure scalability and responsiveness across different devices.</li>
-                </ul>
-                <p><strong>3. Technologies Used</strong></p>
-                <ul>
-                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-                    <li><strong>Backend:</strong> .NET Core, ASP.NET</li>
-                    <li><strong>Database:</strong> SQL Server</li>
-                    <li><strong>Frameworks & Libraries:</strong> Entity Framework</li>
-                    <li><strong>Hosting & Deployment:</strong> Azure, IIS</li>
-                </ul>
-                <p><strong>4. Features and Functionalities</strong></p>
-                <ul>
-                    <li>User-friendly navigation</li>
-                    <li>Menu browsing with descriptions and prices</li>
-                    <li>Cart management with item modifications</li>
-                    <li>Tax calculation</li>
-                    <li>Checkout process and order confirmation</li>
-                </ul>
-                <p><strong>5. System Architecture</strong></p>
-                <p>The application follows an MVC (Model-View-Controller) architecture:</p>
-                    <ul>
-                        <li><strong>Model:</strong> Represents the data structure</li>
-                        <li><strong>View:</strong> Provides the user interface</li>
-                        <li><strong>Controller:</strong> Handles user requests and logic</li>
-                    </ul>
-                <p><strong>6. Database Schema</strong></p>
-                    <ul>
-                        <li><strong>Users Table:</strong> Stores user details</li>
-                        <li><strong>Menu Table:</strong> Stores pizza details</li>
-                        <li><strong>Orders Table:</strong> Stores order details</li>
-                        <li><strong>Cart Table:</strong> Temporary storage for user selections</li>
-                    </ul>
-                <p><strong>7. Challenges & Solutions</strong></p>
-                    <ul>
-                        <li>Implemented AJAX for real-time updates</li>
-                        <li>Optimized database queries for scalability</li>
-                        <li>Applied authentication and authorization measures</li>
-                    </ul>
-                    <p><strong>8. Conclusion</strong></p>
-                    <p>The Contoso Pizza Web Application provides an intuitive and efficient online pizza ordering experience. 
-                       By leveraging modern technologies, the system ensures smooth functionality and ease of use. With future 
-                       enhancements, it has the potential to become a fully-fledged e-commerce platform for pizza lovers.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/chevva-ram-linga-reddy" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="hero__right">
+                    <img src="profile.jpg" alt="Ram Linga Reddy Chevva" class="hero__image">
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <h3>Certification Web Application</h3>
-                <p><strong>Project Overview:</strong></p>
-                <p>The Certification Web Application is a platform that enables employees to manage their certifications. 
-                    Users can log in to their accounts and view the certifications they have earned, along with details such as expiration dates and certification statuses.
-                     Some certifications are valid for a lifetime, while others have an expiry date. The application also includes a manager dashboard, 
-                     where managers can view all certifications within their team and track their employees' certification statuses.</p>
-                
-                <p><strong>Key Features:</strong></p>
-                <ul>
-                    <li><strong>User Authentication:</strong> Employees log in securely to access their personal dashboard.</li>
-                    <li><strong>Employee Dashboard:</strong> Displays certifications, expiry dates, and status of each certification for the logged-in user.</li>
-                    <li><strong>Certification Expiry Tracking:</strong> Certifications with expiry dates are automatically tracked,
-                         and employees receive notifications when nearing expiration.</li>
-                    <li><strong>Lifetime Certifications:</strong> Certifications with no expiration are displayed as valid indefinitely.</li>
-                    <li><strong>Manager Dashboard:</strong> Managers can view certifications for all employees, track expirations, and generate reports.</li>
-                    <li><strong>Automated Notifications:</strong> Notifications are sent to employees and managers 
-                        when certifications are about to expire or when a new certification is added.</li>
-                </ul>
-                
-                <p><strong>Technology Stack:</strong></p>
-                <ul>
-                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript (React, Angular, or Vue.js for dynamic UI components)</li>
-                    <li><strong>Backend:</strong> ASP.NET Core, Node.js, or Django</li>
-                    <li><strong>Database:</strong> SQL Server, MySQL</li>
-                    <li><strong>Authentication:</strong> Secure login with JWT or OAuth</li>
-                    <li><strong>Notifications:</strong> Email notifications using SendGrid or Mailgun</li>
-                </ul>
-                
-                <p><strong>Project Purpose:</strong></p>
-                <p>The purpose of this web application is to streamline the tracking and management of certifications within a company. 
-                    Employees can easily view and monitor their certifications, while managers have a central place to track the
-                     certifications of all employees in their team, ensuring compliance and proper certification management.</p>                   
+        </section>
+
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section__title">Experience</h2>
+                <div class="experience__grid">
+                    <div class="experience__card">
+                        <h3 class="experience__role">Teacher's Assistant</h3>
+                        <p class="experience__company">University of South Carolina - Columbia, SC</p>
+                        <p class="experience__duration">January 2023 - May 2024</p>
+                        <ul class="experience__list">
+                            <li>Assisted in teaching Python and HTML courses</li>
+                            <li>Provided hands-on guidance in lab sessions</li>
+                            <li>Graded assignments and exams</li>
+                            <li>Collaborated on course material development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience__card">
+                        <h3 class="experience__role">Java Developer</h3>
+                        <p class="experience__company">Mouri Tech</p>
+                        <p class="experience__duration">September 2021 - June 2022</p>
+                        <ul class="experience__list">
+                            <li>Developed web applications with Spring Framework</li>
+                            <li>Built REST APIs on AWS</li>
+                            <li>Implemented CI/CD pipelines</li>
+                            <li>Optimized Oracle DB performance</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email at <strong>ramlingareddy2k@gmail.com</strong>. I'd love to connect!</p>
+        <!-- Education Section -->
+<section id="education" class="section">
+    <div class="container">
+        <h2 class="section__title">Education</h2>
+        
+        <div class="education__card">
+            <div class="education__header">
+                <h3 class="education__degree">Master of Science: Computer Science</h3>
+                <p class="education__university">University of South Carolina – Columbia, SC</p>
+                <p class="education__duration"><em>August 2022 – May 2024</em></p>
+            </div>
+            
+            <ul class="education__list">
+                <li class="education__item">
+                    <i class="fas fa-graduation-cap education__icon"></i>
+                    Completed advanced coursework in Computer Architecture, Database Management Systems, 
+                    Analysis of Algorithms, and Azure Cloud Native Development
+                </li>
+                
+                <li class="education__item">
+                    <i class="fas fa-flask education__icon"></i>
+                    Gained practical experience in Wireless and Mobile Systems for IoT, Health IT, 
+                    and Network System Security
+                </li>
+                
+                <li class="education__item">
+                    <i class="fas fa-code education__icon"></i>
+                    Developed strong foundation in Java programming and full-stack development, 
+                    with focus on building scalable, secure applications
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__grid">
+                    <div class="project__card">
+                        <h3 class="project__title">Contoso Pizza Web App</h3>
+                        <p class="project__description">
+                            The Contoso Pizza Web Application is an interactive platform for seamless online pizza ordering. It allows users to browse the menu, customize orders, manage their cart, and complete secure transactions.
+                        </p>
+                        <div class="project__tech">
+                            <span class="tech__pill">HTML</span>
+                            <span class="tech__pill">CSS</span>
+                            <span class="tech__pill">JavaScript</span>
+                            <span class="tech__pill">.NET Core</span>
+<span class="tech__pill">ASP.NET</span>
+<span class="tech__pill">SQL</span>
+<span class="tech__pill">Azure</span>
+                        </div>
+<p class="project__purpose">
+                            This application aims to enhance the online ordering experience by providing a smooth interface, efficient cart management, and a secure payment process, ensuring a hassle-free purchase journey for customers.
+</p>
+                    </div>
 
-    <footer>
+                    <div class="project__card">
+                        <h3 class="project__title">Certification Web App</h3>
+                        <p class="project__description">
+                            Certification management system with automated expiry notifications, 
+                            manager dashboard, and secure authentication. Features include role-based access control 
+                            and email notifications.
+                        </p>
+                        <div class="project__tech">
+<span class="tech__pill">HTMl</span>
+<span class="tech__pill">CSS</span>
+<span class="tech__pill">JavaScript</span>
+<span class="tech__pill">SQL</span>
+<span class="tech__pill">Azure</span>
+<span class="tech__pill">Dockers</span>
+                            <span class="tech__pill">React</span>
+                            <span class="tech__pill">Node.js</span>
+                            <span class="tech__pill">MongoDB</span>
+                            <span class="tech__pill">JWT</span>
+                        </div>
+<p class="project__purpose">
+                            The Certification Management Web Application centralizes tracking employee certifications and alerts managers when certifications are nearing expiration. It allows employees to easily add and update their certifications through secure, role-based access.
+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section__title">Technical Skills</h2>
+                <div class="skills__grid">
+                    <span class="skill__item">Java</span>
+                    <span class="skill__item">Python</span>
+                    <span class="skill__item">JavaScript</span>
+                    <span class="skill__item">HTML5</span>
+                    <span class="skill__item">CSS3</span>
+                    <span class="skill__item">Spring Boot</span>
+                    <span class="skill__item">Hibernate</span>
+                    <span class="skill__item">React.js</span>
+                    <span class="skill__item">Angular</span>
+                    <span class="skill__item">AWS EC2</span>
+                    <span class="skill__item">AWS S3</span>
+                    <span class="skill__item">AWS RDS</span>
+                    <span class="skill__item">Azure Cloud</span>
+                    <span class="skill__item">Jenkins</span>
+                    <span class="skill__item">GitHub</span>
+                    <span class="skill__item">Docker</span>
+                    <span class="skill__item">Oracle</span>
+                    <span class="skill__item">MySQL</span>
+                    <span class="skill__item">JUnit</span>
+                    <span class="skill__item">Mocha</span>
+                    <span class="skill__item">Selenium</span>
+                    <span class="skill__item">Cucumber</span>
+                    <span class="skill__item">Agile</span>
+                    <span class="skill__item">CI/CD</span>
+                    <span class="skill__item">RESTful APIs</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section__title">Get in Touch</h2>
+              <p>Please contact me directly at 
+    <a href="mailto:ramlingaredd2k@gmail.com" class="email-link">ramlingaredd2k@gmail.com</a> 
+    or through this form:
+</p> <br>
+                <form class="contact__form">
+                    <div class="form__group">
+                        <input type="text" placeholder="Name" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" placeholder="Email" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <textarea placeholder="Message" class="form__textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form__button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Ram Chevva. All rights reserved.</p>
+            <p class="footer__text">&copy; 2024 Ram Linga Reddy Chevva. All rights reserved.</p>
         </div>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
