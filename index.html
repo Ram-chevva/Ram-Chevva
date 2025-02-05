@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+          e.preventDefault();
+          
+          const formData = new FormData(e.target);
+          const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(Object.fromEntries(formData))
+          });
+      
+          const result = await response.json();
+          const messageEl = document.querySelector('.form-message');
+          
+          if (result.success) {
+            messageEl.textContent = 'Message sent successfully!';
+            e.target.reset();
+          } else {
+            messageEl.textContent = result.error || 'Error sending message';
+          }
+        });
+      </script>
 </head>
 <body>
     <header class="header">
@@ -38,7 +60,7 @@
                     </div>
                 </div>
                 <div class="hero__right">
-                    <img src="profile.jpg" alt="Ram Linga Reddy Chevva" class="hero__image">
+                    <img src="images/profile.jpg" alt="Ram Linga Reddy Chevva" class="hero__image">
                 </div>
             </div>
         </section>
@@ -200,7 +222,7 @@
     <a href="mailto:ramlingaredd2k@gmail.com" class="email-link">ramlingaredd2k@gmail.com</a> 
     or through this form:
 </p> <br>
-                <form class="contact__form">
+                <form class="contact__form" action="https://formspree.io/f/your-form-id" method="POST">
                     <div class="form__group">
                         <input type="text" placeholder="Name" class="form__input" required>
                     </div>
